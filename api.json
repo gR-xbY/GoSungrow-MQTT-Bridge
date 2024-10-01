@@ -1,0 +1,14 @@
+[
+  {
+    "endpoint": "getPowerStatistics",
+    "filter": ["dayPower", "nowCapacity"],
+    "topic": "powerStatistics"
+  },
+  {
+    "endpoint": "getPsDetail",
+    "filter": ["actual_energy", 
+                "day_eq_hours",
+                "month_energy_virgin"],
+    "topic": "psDetail"
+  }
+]

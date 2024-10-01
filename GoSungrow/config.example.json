@@ -1,0 +1,12 @@
+{
+  "host": "your_sungrow_host",
+  "appkey": "your_sungrow_appkey",
+  "user": "your_sungrow_user",
+  "password": "your_sungrow_password",
+  "config": "/root/.GoSungrow/config.json",
+  "debug": false,
+  "help": false,
+  "quiet": false,
+  "save": false,
+  "timeout": "30s"
+}
