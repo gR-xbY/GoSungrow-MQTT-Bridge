@@ -1,4 +1,4 @@
-# GoSungrow MQTT Bridge (GoSungrow2MQTT)
+# GoSungrow2MQTT
 
 The current GoSungrow API/addon, created by [MickMake](https://github.com/MickMake/GoSungrow), is no longer being maintained for some reason and has several connection issues. While there are some patches available, such as the one by [triamazikamno](https://github.com/triamazikamno/GoSungrow), they don’t fully address the problem. Specifically, the addon still generates multiple unnecessary entities, complicating the selection of data to be returned and causing frequent connection flooding errors.
 
@@ -118,7 +118,7 @@ docker build -t gosungrow-mqtt-bridge .
 docker run -d gosungrow-mqtt-bridge
 ```
 
-The application will start and begin consuming data from the GoSungrow API and publishing it to the Home Assistant MQTT.
+The application will start and begin consuming data from the GoSungrow API and publishing it to the Home Assistant MQTT in a loop with the time defined in `.env`.
 
 ## Configuring New Sensor on HA
 
@@ -139,5 +139,5 @@ mqtt:
 The Node.js application inside the Docker will make requests to the GoSungrow API using the provided credentials and publish the data to MQTT. The `index.js` script contains the logic for making requests and publishing messages to MQTT.
 
 ## References
-- [https://gist.github.com/Paraphraser/cad3b0aa6428c58ee87bc835ac12ed37](Great gist for common doubts)
-- [https://github.com/MickMake/GoSungrow](GoSungrow API)
+- [Great @Paraphraser Gist for common doubts](https://gist.github.com/Paraphraser/cad3b0aa6428c58ee87bc835ac12ed37)
+- [MickMake GoSungrow API](https://github.com/MickMake/GoSungrow)
