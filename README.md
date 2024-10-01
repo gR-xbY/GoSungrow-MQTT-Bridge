@@ -1,4 +1,4 @@
-# GoSungrow MQTT Bridge
+# GoSungrow MQTT Bridge (GoSungrow2MQTT)
 
 The current GoSungrow API/addon, created by [MickMake](https://github.com/MickMake/GoSungrow), is no longer being maintained for some reason and has several connection issues. While there are some patches available, such as the one by [triamazikamno](https://github.com/triamazikamno/GoSungrow), they don’t fully address the problem. Specifically, the addon still generates multiple unnecessary entities, complicating the selection of data to be returned and causing frequent connection flooding errors.
 
